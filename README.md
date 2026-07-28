@@ -4,85 +4,142 @@
     </a>
 </p>
 
-<h1 align="center">
-  Znote - The note-taking app for Doers
-</h1>
+<h1 align="center">Znote — Markdown notes that <em>run</em>.</h1>
 
 <p align="center">
-  <a href="https://znote.io">Website</a>
-  ·
-  <a href="#installation">Installation</a>
-  ·
-  <a href="https://blog.znote.io">Blog</a>
+  Write a note. Press play. The AI reads your files, runs your code, and writes the result inline.<br>
+  Plain <code>.md</code> files on your disk — yours forever.
 </p>
 
-<a href="https://www.youtube.com/watch?v=7PiqfG-BYdQ">
-  <img width="1000" alt="editor-wysiwyg" src="https://github.com/alagrede/znote-app/assets/5312754/0dff4417-276a-4870-90dc-507806ecb323">
-</a>
+<p align="center">
+  <a href="https://znote.io"><img src="https://img.shields.io/badge/website-znote.io-blue" alt="Website"></a>
+  <a href="https://znote.io/#download"><img src="https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey" alt="Platforms"></a>
+  <a href="https://znote.io/#download"><img src="https://img.shields.io/badge/download-free-brightgreen" alt="Free download"></a>
+  <img src="https://img.shields.io/badge/Product%20Hunt-%E2%98%85%205.0-orange" alt="Top on Product Hunt">
+</p>
 
-**Znote** is your ultimate note-taking companion that transforms your simple notes into actionable steps. Designed with developers and productivity enthusiasts in mind, Znote leverages the power of Markdown and JavaScript to make your notes more dynamic and interactive.
+<p align="center">
+  <a href="https://znote.io/#download">Download</a>
+  ·
+  <a href="https://doc.znote.io">Docs</a>
+  ·
+  <a href="https://recipe.znote.io">Recipes</a>
+  ·
+  <a href="https://znote.io/obsidian">Znote + Obsidian</a>
+  ·
+  <a href="https://blog.znote.io">Blog</a>
+  ·
+  <a href="https://znote.io/faq.html">FAQ</a>
+</p>
+
+<a href="https://znote.io">
+  <img width="1000" alt="Znote editor with a runnable code block" src="https://znote.io/assets/screenshots/znote-screenshot-code-bar.webp">
+</a>
 
 ## What is Znote?
 
-Znote is a note-taking app that not only allows you to capture your thoughts but also enables you to create **dashboards** and **automate tasks** directly within your notes. With the integration of **templates and AI**, Znote simplifies complex tasks and **boosts your productivity**.
+**Znote** is a clean, **local-first Markdown editor** for your `.md` files — minimalist by default, powerful when you need it. On top of a calm, beautiful editor sit **two superpowers**, and only two:
 
+1. **🧠 AI inside the editor.** Type `@` to bring any note, folder, or code block in as grounded context — the AI reads *your* files and writes the result inline, right where you're writing. No second app, no chat window, no copy-paste.
+2. **▶️ Code blocks that run.** JavaScript / Node.js executes locally in the note. Query a database, fetch an API, shape the rows — the chart or table renders inline, right under the code that produced it. Save the note and you've built a tool.
 
-### Key Features:
+Everything else is a gorgeous Markdown editor: WYSIWYG, built-in themes (Dark, Nord, Orange, Terminal…), focus mode, tabs, tags, full-text search — and a treeview that **composes folders from anywhere on your disk into one workspace**. Your files stay put, nothing to migrate.
 
-- **Actionable Notes**: Write notes that can trigger actions using embedded JavaScript.
-- **Markdown Support**: Enjoy the simplicity and flexibility of Markdown for formatting your notes.
-- **Dynamic Dashboards**: Seamlessly create and manage interactive dashboards from your notes.
-- **Automations**: Automate repetitive tasks directly from your notes to streamline your workflow.
-- **Templates & AI**: Leverage a variety of templates and AI tools to deploy and manage code blocks effortlessly.
+<a href="https://znote.io">
+  <img width="1000" alt="Compose AI prompts from your notes with @references" src="https://znote.io/assets/screenshots/znote-screenshot-mention.webp">
+</a>
 
-## Getting Started
+## Everything your notes can do
 
-### Download
+| | Feature | |
+|---|---|---|
+| 📝 | **WYSIWYG Markdown** | Write clean Markdown, rendered as you type. No mode-switching, no clutter. |
+| 🔗 | **AI `@references`** | Point the AI at notes, folders, files, or code blocks. Answers stay grounded in your material — no generic guesses. |
+| ⚡ | **Run JS & Node.js inline** | `await fetch(...)`, `db.query(...)`, per-file NPM, charts and tables rendered next to the code. |
+| 🎙️ | **Voice recording & transcription** | Hit record, get a clean, structured note back — typed up for you, inline. |
+| 🌐 | **Web search from AI blocks** | The AI browses the web and writes current results back as context you can keep. |
+| 🧩 | **Tool calls & plugins** | The AI calls your JS functions; Gmail, Jira, Slack and database plugins available when you want them. |
+| 🗂️ | **Composable treeview** | Aggregate folders from anywhere on your disk into one unified tree — files stay where they are. |
+| 🎨 | **Beautiful themes** | Dark, Nord, Orange, Terminal and more. An editor you'll actually want to open. |
+| 📤 | **Exports** | HTML, PDF, or runnable script — from the same `.md` file. |
+| 🔒 | **100% local-first** | Plain `.md` files on your disk. Offline, no cloud, no account, no telemetry by default. |
 
-Znote is available for the following platforms:
+## What lives in a `.md` file?
 
-- **Windows**
-- **Mac**
-- **Linux**
+Your notes, your AI's context, and your code — all in one plain Markdown file:
 
-You can download the app from the [official website](https://znote.io).
+````markdown
+# Weekly report — week 18
 
-### Installation
+Reviewed onboarding metrics with the team.       ← Markdown prose, like always.
 
-To install Znote on your preferred platform, follow these steps:
+@analytics/onboarding-funnel.md                  ← @references — the AI reads files & blocks as context.
 
-1. **Windows**: Download the `.exe` file and run the installer.
-2. **Mac**: Download the `.dmg` file, open it, and drag Znote to your Applications folder.
-3. **Linux**: Download the `.AppImage` file and follow the standard installation process.
+```ai
+Write a 3-bullet summary of @onboarding-funnel.  ← AI block — calls your model with the @context above.
+```
 
-## Stay Updated
+```js
+const data = await db.query(...)                 ← JS / Node block — runs locally, output renders inline.
+barChart(data)
+```
+````
 
-Subscribe to our newsletter on the [Znote website](https://znote.io) to receive the latest tutorials, tips, and updates.
+Want ready-to-run examples? Check the [`examples/`](examples) folder in this repo, or install working workflows in one click from the [Recipe Library](https://recipe.znote.io) — Gmail auto-reply, Jira from specs, API tester, SQL explorer, standup digest, and more.
 
-## Contact
+## Works with your Obsidian vault
 
-For any queries or support, feel free to reach out via email:
+<a href="https://znote.io/obsidian">
+  <img width="1000" alt="Znote Obsidian companion plugin" src="https://znote.io/assets/screenshots/obsidian-companion.png">
+</a>
 
-- **Email**: lagrede.anthony[at]gmail.com
+Znote is not an Obsidian replacement — it's a **companion**. Since it's all plain `.md`, your vault opens as-is: wikilinks, embeds, attachments, your settings. Znote adds executable code blocks and inline AI, and saves results back as Markdown Obsidian can read. A one-click companion plugin even adds **"▶ Run in Znote"** buttons inside Obsidian.
 
-You can also visit our public website: [znote.io](https://znote.io).
+Stop using Znote tomorrow — your vault won't notice. [Learn more →](https://znote.io/obsidian)
 
-## Contributing
+## Bring Your Own AI (BYOK)
 
-We welcome contributions to improve Znote! If you encounter any issues or have suggestions for new features, please use the [discussions](https://github.com/alagrede/znote-app/discussions) section on GitHub.
+Your AI key. Your models. Your rules. No vendor lock-in.
 
-## Reporting Bugs
+- **OpenAI** — direct API key, the most-used path.
+- **Ollama (local)** — run models like LLaMA or Mistral on your own machine, fully offline. Nothing ever leaves your computer.
+- **OpenRouter** — one API, hundreds of models from many providers.
 
-If you find any bugs, please report them by creating an issue in the [issues section](https://github.com/alagrede/znote-app/issues) on GitHub.
+New to API keys? Znote walks you through it in 2 minutes on first launch. **~5€ of API credit ≈ months of daily use.**
+
+## Installation
+
+Znote is **free** with every feature included, for **Windows** (x64 & arm64), **macOS** (Intel & Apple Silicon), and **Linux** (x64 & arm64).
+
+1. Download from [znote.io](https://znote.io/#download).
+2. **Windows**: run the `.exe` installer · **macOS**: open the `.dmg` and drag Znote to Applications · **Linux**: run the `.AppImage`.
+3. That's it — no account, works offline.
+
+The AI comes with free requests to try, and you can bring your own key to keep going on your own terms — see [znote.io](https://znote.io) for details.
+
+## A word from the maker
+
+> I built Znote because I believe your notes shouldn't be a dead archive — they should *work with you*. Being able to **converse with your own notes** changes everything for productivity: the AI answers from what *you* wrote — your specs, your meetings, your research — not generic guesses. And **runnable code blocks** turn a simple note into a little tool: query a database, call an API, render a chart, save the file — next week you just open it and press play. Once your notes can think and run, you stop copy-pasting between five apps and start getting things done in one place.
+>
+> — **Anthony**, maker of Znote
+
+## Community & support
+
+Znote is built by **one indie dev** who reads every email. 🚀
+
+- 💡 **Ideas & questions** — [GitHub Discussions](https://github.com/alagrede/znote-app/discussions)
+- 🐛 **Bug reports** — [GitHub Issues](https://github.com/alagrede/znote-app/issues)
+- 📚 **Documentation** — [doc.znote.io](https://doc.znote.io)
+- ✉️ **Email** — contact@alc-digital.fr
+- 🐦 **Twitter/X** — [@alagrede](https://twitter.com/alagrede)
 
 ## Credits
 
-Znote is built with love using:
-
-- [Electron](https://www.electronjs.org/)
-- [React](https://reactjs.org/)
+Znote is built with love using [Electron](https://www.electronjs.org/) and [React](https://reactjs.org/).
 
 ---
 
-Thank you for using Znote! We're excited to see how you leverage it to boost your productivity and simplify your work. 🚀
-
+<p align="center">
+  <b>Turn your first note into action.</b><br>
+  <a href="https://znote.io/#download">Download free →</a>
+</p>
