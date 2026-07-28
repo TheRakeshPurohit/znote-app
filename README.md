@@ -33,7 +33,7 @@
 </p>
 
 <a href="https://znote.io">
-  <img width="1000" alt="Znote editor with a runnable code block" src="https://znote.io/assets/screenshots/znote-screenshot-code-bar.webp">
+  <img width="1000" alt="Znote editor with a runnable code block" src="assets/znote-screenshot-code-bar.webp">
 </a>
 
 ## What is Znote?
@@ -46,7 +46,7 @@
 Everything else is a gorgeous Markdown editor: WYSIWYG, built-in themes (Dark, Nord, Orange, Terminal…), focus mode, tabs, tags, full-text search — and a treeview that **composes folders from anywhere on your disk into one workspace**. Your files stay put, nothing to migrate.
 
 <a href="https://znote.io">
-  <img width="1000" alt="Compose AI prompts from your notes with @references" src="https://znote.io/assets/screenshots/znote-screenshot-mention.webp">
+  <img width="1000" alt="Compose AI prompts from your notes with @references" src="assets/znote-screenshot-mention.webp">
 </a>
 
 ## Everything your notes can do
@@ -90,7 +90,7 @@ Want ready-to-run examples? Check the [`examples/`](examples) folder in this rep
 ## Works with your Obsidian vault
 
 <a href="https://znote.io/obsidian">
-  <img width="1000" alt="Znote Obsidian companion plugin" src="https://znote.io/assets/screenshots/obsidian-companion.png">
+  <img width="1000" alt="Znote Obsidian companion plugin" src="assets/obsidian-companion.png">
 </a>
 
 Znote is not an Obsidian replacement — it's a **companion**. Since it's all plain `.md`, your vault opens as-is: wikilinks, embeds, attachments, your settings. Znote adds executable code blocks and inline AI, and saves results back as Markdown Obsidian can read. A one-click companion plugin even adds **"▶ Run in Znote"** buttons inside Obsidian.
