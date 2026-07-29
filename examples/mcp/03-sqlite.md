@@ -10,17 +10,15 @@ database, a client file) without installing a GUI tool.
   "mcpServers": {
     "sqlite": {
       "command": "uvx",
-      "args": ["--with", "mcp==1.*", "mcp-server-sqlite", "--db-path", "~/data/app.db"]
+      "args": ["--with", "mcp<2", "mcp-server-sqlite", "--db-path", "~/data/app.db"]
     }
   }
 }
 ```
 
 > This server is Python: `uvx` (ships with [uv](https://docs.astral.sh/uv/),
-> `brew install uv`) runs it without installing. The `--with mcp==1.*` pin is
-> required (written `==1.*` rather than `<2`: a `<` would be parsed as a
-> shell redirection on Windows): this archived reference server breaks
-> with the MCP 2.x SDK
+> `brew install uv`) runs it without installing. The `--with mcp<2` pin is
+> required: this archived reference server breaks with the MCP 2.x SDK
 > (`AttributeError: 'Server' object has no attribute 'list_resources'`).
 > Node alternative, no Python: `npx -y mcp-sqlite ~/data/app.db`.
 >
