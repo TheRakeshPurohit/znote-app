@@ -17,7 +17,8 @@ with ▶.
 Servers launch with `npx` (**Node.js** ecosystem) or `uvx` (**Python**
 ecosystem, the [uv](https://docs.astral.sh/uv/) tool). If the Test in
 Settings → MCP shows `command 'uvx' not found` (or `npx`), install the
-matching runtime — **no Znote restart needed** afterwards:
+matching runtime, then Test again (**Windows: restart Znote first** — a
+running app doesn't see a freshly installed runtime):
 
 | OS | Node.js (`npx`) | uv (`uvx`) |
 |----|-----------------|------------|
