@@ -59,6 +59,7 @@ Everything else is a gorgeous Markdown editor: WYSIWYG, built-in themes (Dark, N
 | 🎙️ | **Voice recording & transcription** | Hit record, get a clean, structured note back — typed up for you, inline. |
 | 🌐 | **Web search from AI blocks** | The AI browses the web and writes current results back as context you can keep. |
 | 🧩 | **Tool calls & plugins** | The AI calls your JS functions; Gmail, Jira, Slack and database plugins available when you want them. |
+| 🔌 | **MCP servers** | Plug GitHub, Postgres, Slack, Linear… into your AI blocks via the [Model Context Protocol](https://modelcontextprotocol.io) — any server, one config file. |
 | 🗂️ | **Composable treeview** | Aggregate folders from anywhere on your disk into one unified tree — files stay where they are. |
 | 🎨 | **Beautiful themes** | Dark, Nord, Orange, Terminal and more. An editor you'll actually want to open. |
 | 📤 | **Exports** | HTML, PDF, or runnable script — from the same `.md` file. |
@@ -86,6 +87,26 @@ barChart(data)
 ````
 
 Want ready-to-run examples? Check the [`examples/`](examples) folder in this repo, or install working workflows in one click from the [Recipe Library](https://recipe.znote.io) — Gmail auto-reply, Jira from specs, API tester, SQL explorer, standup digest, and more.
+
+## Plug any tool with MCP
+
+Znote speaks the **[Model Context Protocol](https://modelcontextprotocol.io)** — the open standard that connects AI to real tools. Declare servers in your vault's `.znote/mcp.json` (the same format as Claude Desktop, so any server's README config pastes as-is), and your ` ```ai ` blocks can use their tools:
+
+````markdown
+```ai tools=github
+List the open PRs on acme/webapp and draft my standup brief.
+```
+
+```ai tools=postgres
+How many orders this month, broken down by channel?
+```
+````
+
+- `tools=<server>` gives the model **all** the server's tools; `tools=<server>.<tool>` just one. Mix freely with your own JS functions.
+- **Settings → MCP** lists your servers, tests the connection, and shows every tool they expose.
+- Servers run **locally**, as processes Znote starts and stops — consistent with everything else in the app.
+
+Get started with the **[22 ready-to-run examples](examples/mcp)** — Filesystem, Postgres, GitHub, Playwright, Linear, Notion, Slack, Stripe, Grafana, Zapier and more — each with the exact config and prompts to run as-is.
 
 ## Works with your Obsidian vault
 
