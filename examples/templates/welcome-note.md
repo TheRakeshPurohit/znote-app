@@ -1,16 +1,20 @@
-# ✨ Welcome to Znote
-
 ### Think with AI. Keep the result in Markdown.
 
 Znote turns ideas and AI conversations into structured documents—directly in local `.md` files.
+
+## Connect your AI provider 🔑
+
+AI features run on your own API key. Open the AI provider selector in the bottom bar and add a key from OpenAI, OpenRouter, or point Znote at Ollama running on your machine.
+
+It takes a minute, and it's the cheapest way to work: you pay your provider directly for what you use, with nothing added by us. With Ollama, it costs nothing at all and no request ever leaves your computer.
 
 ## Create your first document 💬
 
 1. Replace the sample idea below with your own, or use it as written:
 
-   > Plan a neighborhood event that helps residents meet, share skills, and build stronger local connections.
+> Plan a neighborhood event that helps residents meet, share skills, and build stronger local connections.
 
-2. Select the text above to give the idea as context 
+2. Select the text above to give the idea as context
 3. Press `Ctrl+H` to open the AI input.
 4. Run `/brainstorm`.
 5. Answer three focused questions.
@@ -37,17 +41,11 @@ Once the summary is inserted, continue working with AI directly in the document:
 - There is no proprietary file format and no account is required.
 - Znote supports OpenAI, OpenRouter, and Ollama.
 - API keys are stored on your device.
-- Token usage is optimized to help your credits last longer.
+- Token usage is optimized to keep your provider bill low.
 
-## Try it free
+## Working as a team?
 
-You get **20 free AI requests**.
-
-After the trial, a personal license unlocks AI features using your own API keys:
-
-- One-time payment
-- Lifetime access and updates
-- Use on all your personal devices
+If your company wants to give AI to everyone without handing out API keys, Znote can manage it centrally—seats, allowed email domains, models, and usage reporting. See [znote.io/company](https://znote.io/company.html).
 
 ## Go further 🚀
 
