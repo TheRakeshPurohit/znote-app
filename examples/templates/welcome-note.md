@@ -1,3 +1,5 @@
+# ✨ Welcome to Znote
+
 ### Think with AI. Keep the result in Markdown.
 
 Znote turns ideas and AI conversations into structured documents—directly in local `.md` files.
