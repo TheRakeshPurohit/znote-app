@@ -10,11 +10,20 @@ AI features run on your own API key. Open the AI provider selector in the bottom
 
 It takes a minute, and it's the cheapest way to work: you pay your provider directly for what you use, with nothing added by us. With Ollama, it costs nothing at all and no request ever leaves your computer.
 
+> ## 👉 Which model should I use?
+>
+> **We recommend OpenAI.** Two models cover everything:
+>
+> - **`gpt-4.1`** — for everyday work on text: rewriting, summarizing, correcting, `/brainstorm`, `/clarify`, `/rewrite`. Fast and inexpensive.
+> - **`gpt-5.6-terra`** — for advanced reasoning and MCP tool use: long analysis, multi-step tasks, calling external tools.
+>
+> Start with `gpt-4.1` and switch to `gpt-5.6-terra` when a task needs real thinking.
+
 ## Create your first document 💬
 
 1. Replace the sample idea below with your own, or use it as written:
 
-> Plan a neighborhood event that helps residents meet, share skills, and build stronger local connections.
+   > Plan a neighborhood event that helps residents meet, share skills, and build stronger local connections.
 
 2. Select the text above to give the idea as context
 3. Press `Ctrl+H` to open the AI input.
